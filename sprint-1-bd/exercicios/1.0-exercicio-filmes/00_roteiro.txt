@@ -1,4 +1,4 @@
 Voc� dever� criar a modelagem para o cat�logo de filmes, observando a seguinte situa��o:
 
 - um filme possui apenas um �nico g�nero.
-- um g�nero pode definir mais de um filme.
+- um g�nero pode definir mais de um filme..
