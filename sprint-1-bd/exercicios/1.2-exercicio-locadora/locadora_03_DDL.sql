@@ -3,7 +3,7 @@ CREATE DATABASE Locadora; --Criar DB "Locadora"
 USE Locadora; --Acessar DB "Locadora"
 CREATE TABLE Empresa
 (
-	idEmpresa		INT PRIMARY KEY --Chave Primára da tabela "Empresa"
+	idEmpresa		INT PRIMARY KEY IDENTITY --Chave Primára da tabela "Empresa"
 	,Endereco		VARCHAR(200) NOT NULL --Endereço da Empresa, pode conter até 200 caracteres e não pode ser deixado em branco
 	,CNPJ			VARCHAR(20) NOT NULL --CNPJ da Empresa, pode conter até 20 caracteres
 );
@@ -23,7 +23,7 @@ CREATE TABLE Alugueis
 	,idVeiculos		INT FOREIGN KEY REFERENCES Veiculos(idVeiculos) --Chave estrangeira pertencente a tabela "Veiculos"
 	,DataRetirada	DATE NOT NULL	--Data em que o veículo foi alugado e retirado
 	,DataEntrega	DATE NOT NULL	--Data de entrega do veículo
-	,ValorAluguel	NUMERIC(5,2) NOT NULL	--Valor do aluguel do carro
+	,ValorAluguel	SMALLMONEY NOT NULL	--Valor do aluguel do carro
  );
 
 CREATE TABLE Cliente
@@ -33,5 +33,6 @@ CREATE TABLE Cliente
 	,Nome			VARCHAR(150) NOT NULL --Nome do Cliente, com o limite de até 150 caracteres
 	,Telefones		VARCHAR(20) NOT NULL --Número do Cliente, com o limite de até 20 caracteres
 	,CPF			VARCHAR(20) NOT NULL --Número do CPF do cliente, com o limite de até 20 caracteres
-	,RG				VARCHAR(10) NOT NULL --Número do RG do Cliente, com o limite de até 10 caracteres
+	,RG				VARCHAR(20) NOT NULL --Número do RG do Cliente, com o limite de até 10 caracteres
  );
+  
