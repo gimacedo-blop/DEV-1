@@ -41,3 +41,12 @@ CREATE TABLE Estilos
 	,Nome			VARCHAR(30) NOT NULL --Nome do estilo musical
 );
 
+
+
+
+ALTER TABLE Albuns
+DROP COLUMN Duracao
+
+ALTER TABLE Albuns
+ADD Duracao TIME NOT NULL
+

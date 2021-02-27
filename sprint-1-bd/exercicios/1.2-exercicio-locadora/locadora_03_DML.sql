@@ -21,7 +21,17 @@ values				 ('Manuel Silveira','(11) 98642-1144','313.656.639-96','50.527.271-2',
 
 
 DELETE FROM Alugueis WHERE idAlugueis = 5
-DELETE FROM Alugueis WHERE idAlugueis = 6
-DELETE FROM Alugueis WHERE idAlugueis = 6
-DELETE FROM Alugueis WHERE idAlugueis = 9
-DELETE FROM Cliente WHERE idCliente = 3
+DELETE FROM Cliente WHERE idCliente = 14
+DELETE FROM Cliente WHERE idCliente = 15
+DELETE FROM Cliente WHERE idCliente = 16
+DELETE FROM Cliente WHERE idCliente = 17
+
+UPDATE	Alugueis
+SET		idVeiculos = 6
+WHERE	idAlugueis = 7
+
+
+
+SELECT * FROM Cliente
+SELECT * FROM Alugueis
+SELECT * FROM Veiculos

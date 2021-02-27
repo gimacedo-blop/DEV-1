@@ -19,13 +19,18 @@ INSERT INTO Atendimento (idVet,idPet,DataAtendimento,Horario)
 VALUES				     (2,3,'23/02/2021', '10:00')
 						,(3,1,'23/02/2021','9:00')
 						,(1, 2, '23/02/2021','9:30')
-						
 
 DELETE FROM Atendimento WHERE idAtendimento = 5
 DELETE FROM Atendimento WHERE idAtendimento = 6
 DELETE FROM Atendimento WHERE idAtendimento = 7
 
+ALTER TABLE Clinica
+DROP COLUMN RazaoSocial
 
+ALTER TABLE Clinica
+ADD RazaoSocial VARCHAR(200)
 
+ALTER TABLE Veterinarios
+ADD CRMV VARCHAR(200) 
 
-						
+INSERT INTO Clinica (RazaoSocial)

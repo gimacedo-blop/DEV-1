@@ -25,11 +25,28 @@ CREATE TABLE Clinica
 	,CNPJ			VARCHAR(20) NOT NULL --CNPJ da Clínica
 );
 
+ALTER TABLE Clinica	
+ADD RazaoSocial		VARCHAR(100)	--Altera a tabela clinica e adiciona a coluna Razão Social
+
 CREATE TABLE Veterinarios
 (
 	idVet		INT PRIMARY KEY IDENTITY
 	,idClinica	INT FOREIGN KEY REFERENCES Clinica(idClinica) --Chave Estrangeira tabela "Clinica"
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 CREATE TABLE Atendimento
 (
