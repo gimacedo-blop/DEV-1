@@ -52,5 +52,9 @@ values				('Alternative', 2)
 				   ,('Techno', 9)
 
 
-				   SELECT * FROM Albuns
+SELECT * FROM Albuns
+
+UPDATE Albuns
+SET StatusVisu = 0
+WHERE idAlbuns = 7 
 

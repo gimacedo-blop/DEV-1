@@ -50,3 +50,6 @@ DROP COLUMN Duracao
 ALTER TABLE Albuns
 ADD Duracao TIME NOT NULL
 
+
+SELECT * FROM Usuario
+
