@@ -39,10 +39,11 @@ idPedido		INT PRIMARY KEY IDENTITY
 
 
 CREATE TABLE ProdutosPedidos (
-idPedido	INT PRIMARY KEY IDENTITY
+idProdutoPedidos	INT PRIMARY KEY IDENTITY
+,idPedido	INT FOREIGN KEY REFERENCES Pedidos(idPedido)
 ,idProduto	INT FOREIGN KEY REFERENCES Produtos(idProduto)
 )
 
 DROP TABLE ProdutosPedidos
 
-SELECT * FROM Produtos
+SELECT * FROM ProdutosPedidos

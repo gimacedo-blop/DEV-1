@@ -28,18 +28,10 @@ VALUES				('568210', 1, '22-01-2020', 'Em andamento')
 				   ,('255699', 2, '10-01-2020', 'Entregue')
 
 INSERT INTO ProdutosPedidos (idPedido, idProduto)
-VALUES						(1, 2)
-						   ,(1, 4)
-						   ,(2, 5)
-						   ,(2, 3)
-
-UPDATE PedidosProdutos
-SET idPedido = 1
-WHERE idPedidoPr = 1
-
-SELECT * FROM Produtos
-
-SET IDENTITY_INSERT ProdutosPedidos ON
+VALUES						(2, 2)
+						   ,(2, 4)
+						   ,(3, 5)
+						   ,(3, 3)
 
 
 
