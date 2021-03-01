@@ -32,11 +32,12 @@ VALUES							 (1, 1)
 								,(4, 2)
 								,(6, 3)
 
+UPDATE Personagens
+SET Nome = 'Fer7'
+WHERE idPersonagens = 4
+
+UPDATE Classes
+SET NOME = 'Necromancer'
+WHERE idClasses = 5
 
 
-
-
-
-SELECT * FROM ClassesHabilidades
-SELECT * FROM Habilidades
-SELECT * FROM Classes
